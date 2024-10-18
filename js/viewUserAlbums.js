@@ -1,4 +1,4 @@
-const endpoint = 'http://ec2-3-144-28-102.us-east-2.compute.amazonaws.com:3000/';
+const endpoint = '';
 
 display();
 async function display() {
