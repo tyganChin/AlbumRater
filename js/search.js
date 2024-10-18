@@ -161,8 +161,8 @@ function createPager(pages) {
 /* method to get the original token */
 async function getToken() {
 
-    const clientID = '1036f292de2741b884a6b6e3769957a3';
-    const clientSecret = 'ffab91a93139428cbde25ab5206464c7';
+    const clientID = '';
+    const clientSecret = '';
 
     const result = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
