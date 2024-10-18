@@ -22,10 +22,10 @@ app.use(express.json({ limit: '50mb' }));
 
 /* Create a connection to the database */
 const connection = mysql.createConnection({
-    host: 'albumrater-db.cdu4gyqu6bfx.us-east-2.rds.amazonaws.com',
-    user: 'admin',
-    password: 'Beary2004!!!',
-    database: 'albumrater-db'
+    host: '',
+    user: '',
+    password: '',
+    database: ''
 });
 
 /* Connect to the database */
