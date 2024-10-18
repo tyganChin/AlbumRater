@@ -4,7 +4,7 @@ console.log(unranked);
 var user = undefined;
 var albums = undefined;
 
-const endpoint = 'http://ec2-3-144-28-102.us-east-2.compute.amazonaws.com:3000/';
+const endpoint = '';
 
 
 display();
@@ -432,8 +432,8 @@ function goTo(page) {
 /*                                            Spotify Funcs                                                 */
 /************************************************************************************************************/
 
-const clientID = '1036f292de2741b884a6b6e3769957a3';
-const clientSecret = 'ffab91a93139428cbde25ab5206464c7';
+const clientID = '';
+const clientSecret = '';
 
 /* method to get the original token */
 async function getToken() {
