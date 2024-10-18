@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New';
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/welcomeBackground.png');
+    background-size: cover; /* or contain, depending on your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-container {
+    width: 72.5%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.record {
+    width: 100%;
+}
+  
+.record-overlay-text {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 28%;
+    color: white;
+    font-size: 3.2vw;
+}
+
+.record-overlay-text2 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 33%;
+    color: white;
+    font-size: 1vw;
+}
+
+.login {
+    font-family: 'Courier New';
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    font-size: 1.75vw;
+}
+
+.createAccount {
+    font-family: 'Courier New';
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    font-size: 1.75vw;
+}
+
+
+.login-createAcc-container {
+    height: 46vh;
+    width: 25vw;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    text-align: center;
+    background-color: #F5F5DC;
+    flex-direction: column;
+}
+
+.login-header {
+    font-size: 3vw;
+    margin-bottom: 1vh;
+}
+
+.login-user-pass {
+    font-size: 2vw;
+    font-family: 'Courier New';
+    margin-top: 1.25vh;
+    margin-bottom: 1.25vh;
+    width: 80%;
+}
+
+.login-button {
+    font-size: 1.75vw;
+    font-family: 'Courier New';
+    margin-top: 1.25vh;
+    margin-bottom: 1.25vh;
+    width: 45%;
+}
+
+#login {
+    display: none;
+}
+
+#createAcc {
+    display: none;
+}
+
+.noAccount-or-account {
+    font-size: 1vw;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.noAccount-or-account:hover {
+    text-decoration: underline;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AlbumRater</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/myAlbums.css">
+    <link rel="stylesheet" href="../css/topBar.css">
+
+</head>
+<body>
+    <img class="texture" src="../images/backgroundTexture.jpg"></img>
+    <div class="top-bar">
+        <img class="top-bar-record" src="../images/recordLoop.gif" id="topRecord">
+        <div class="top-links" id="myAlbums">My Albums</div>
+        <div class="top-links" id="listeningList">Listening List</div>
+        <div class="top-links" id="browseMusic" style="margin-right: 13vw;">Browse Music</div>
+        <div class="searchBox-container">
+            <input class="searchBox" type="text" id="artistSearch" placeholder="Artist" autocomplete="off">
+            <input class="searchBox" type="text" id="albumSearch" placeholder="Album" autocomplete="off">
+            <div id="error" style="color: rgb(255, 60, 60); font-size: 1vw"></div>
+        </div>
+        <img id="searchImage" src="../images/searchIcon.png" alt="Clickable Button" style="cursor: pointer; z-index: 1;" width="2.75%" >
+        <div id="name" style="color: rgb(246, 241, 241); font-size: 1.5vw; margin-left: 2vw; margin-right: 1.5vw; z-index: 1;"></div>
+        <img class="top-links" id="settingsImage" src="../images/settings-icon.png" alt="Clickable Button" style="cursor: pointer;" width="2.75%">
+        <div id="settingsBox">
+            <div id="settingsTitle">Settings</div>
+            <div id="userPassButton" class="settingsOptions">Username/Password</div>
+            <div id="spotifyButton" class="settingsOptions">Connect Spotify</div>
+            <div id="issueButton" class="settingsOptions">Report An Issue</div>
+            <div id="deleteButton" class="settingsOptions">Delete Account</div>
+            <div id="logoutButton" class="settingsOptions">Log-Out</div>
+        </div>
+    </div>
+    <div id="settings-blur"></div>
+    <div id="settings-popup-container">
+        <div class="settings-popup" id="username-menu">
+            <div class="username-menu-title-container">
+                <div>Edit:&nbsp;</div>
+                <div id="userChangeToggle">Username</div>
+                <div>&nbsp;|&nbsp;</div>
+                <div id="passChangeToggle">Password</div>
+            </div>
+            <div class="user-pass-body-container">
+                <img id="settingsMenu-background" src="../images/recordLoop.gif">
+                <div id="userChange-body">
+                    <div id="currentUsername"></div>
+                    <input autocomplete="off" class="user-pass" type="text" id="newUsername" placeholder="New Username">
+                    <input autocomplete="off" class="user-pass" type="text" id="password" placeholder="Password">
+                    <div id="error-message" style="color: red;"></div>
+                    <button onclick="changeUsername()" class="changeUsername-button">Change Username</button>
+                </div>
+                <div id="passChange-body">
+                    <input autocomplete="off" class="user-pass" type="text" id="oldPass" placeholder="Old Password">
+                    <input autocomplete="off" class="user-pass" type="text" id="newPass1" placeholder="New Password">
+                    <input autocomplete="off" class="user-pass" type="text" id="newPass2" placeholder="Retype New Password">
+                    <div id="error-message1" style="color: red;"></div>
+                    <button onclick="changePassword()" class="changeUsername-button">Change Password</button>
+                </div>
+            </div>
+        </div>
+        <div class="settings-popup" id="issue-menu">Report An Issue</div>
+        <div class="settings-popup" id="delete-menu">
+            <div id="delete-title">Are You Sure You Want to Delete Your Account?</div>
+            <div id="delete-subtitle">All of your data will be unrecoverable</div>
+            <button id="deleteAccountButton" onclick="deleteAccount()">DELETE ACCOUNT</button>
+        </div>
+        <img id="closeSettingsMenuButton" src="../images/white-x.png">
+    </div>
+    <script src="../js/topBar.js"></script>
+    
+    <div class="title-container">
+        <div id="myAlbums-title">Your </div>
+        <div class="toggle-container">
+            <div id="ranked-toggle" style="cursor: pointer; text-decoration: underline;" onclick="toggleClicked('ranked')">Ranked</div>
+            <div>&nbsp;|&nbsp;</div>
+            <div id="gallery-toggle" style="cursor: pointer;" onclick="toggleClicked('gallery')">Gallery</div>
+        </div>
+    </div>
+
+    <div class="ranked-container" id="rankedContainer">
+        <div class="row-container" id="rowContainer"></div>
+        <div id="unranked-title" style="margin-top: 2%; margin-left: 2.5%; font-size: 3vw"></div>
+        <div class="row-container" id="unranked-container"></div>
+    </div>
+    
+
+    <div class="gallery-container" id="galleryContainer">
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+
+    <script src="../js/myAlbums.js"></script>
+</body>
+</html>

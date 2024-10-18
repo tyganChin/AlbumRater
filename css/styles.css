@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Courier New';
+    color: #cfcece;
+    background-color: #3c3c3c;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    height: 30vh;
+    overflow: hidden;
+
+}
+
+#bannerImg {
+    width: 100%;
+    height: auto 
+}
+
+.left-container {
+    top: 10vh; /* Adjusted to start just below the banner */
+    position: absolute;
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#profileImage {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+#numAlbums {
+    margin-top: 2vh;
+    font-size: 3vw;
+    width: 80%;
+}
+
+.friends {
+    font-size: 1.1vw;
+    color: #f9f5f5;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.friends:hover {
+    text-decoration: underline;
+}
+
+.middle-container {
+    top: 30vh; /* Adjusted to start just below the banner */
+    right: 25%;
+    width: 50%;
+    position: absolute;
+}
+
+.myAlbums-title {
+    margin-top: 1.5vh;
+    font-size: 2vw;
+}
+
+.myAlbums-container {
+    width: 95%;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.albumImage {
+    width: 20%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid #ffffff;
+}
+
+.viewAllmyAlbums {
+    font-size: 1vw;
+    margin-top: 1.5%;
+    color: #f9f5f5;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.listeningList-title-container {
+    text-align: right; /* Aligns inline elements to the right */
+}
+
+.right-container {
+    top: 30vh; /* Adjusted to start just below the banner */
+    right: 0%;
+    position: absolute;
+    width: 25%;
+    display: flex; /* Use flexbox to center the content */
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    overflow: hidden;
+}
+
+.notifications-container {
+    width: 80%;
+    height: 50vh;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    text-align: center;
+    flex-direction: column;
+    background-color:#1a1a1a;
+    margin-top: 0.5vh;
+}
+
+.notification-header {
+    font-size: 2vw;
+    margin-bottom: 1vh;
+    margin-top: 1.5vh;
+}
+
+

@@ -1,0 +1,277 @@
+.top-bar {
+    height: 10vh; /* Fixed height as a percentage of viewport height */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #686868;
+    color: #010101;
+    text-align: center;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    overflow: hidden; /* Hide any overflow content */
+    /* justify-content: center; Center the content horizontally */
+}
+
+.top-bar-record {
+    padding-left: 1.5%;
+    height: 130%;
+    width: auto;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.top-links {
+    font-size: 1.5vw;
+    color: #f9f5f5;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
+    z-index: 1;
+}
+
+.top-links:hover {
+    text-decoration: underline;
+}
+
+.searchBox-container {
+    width: 20%;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    text-align: center;
+    flex-direction: column;
+    margin-left: 1.25vw;
+    margin-right: 0.5vw;
+    z-index: 1;
+}
+
+.texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    opacity: 12%;
+}
+
+.searchBox {
+    width: 100%;
+    font-size: 1.25vw;
+    font-family: 'Courier New';
+}
+
+#settingsBox {
+    position: absolute;
+    display: none;
+    top: 2.45%;
+    right: 5.6%;
+    overflow: hidden;
+    width: 10.5%;
+    height: 30%;
+    border: 1px solid black; 
+    z-index: 3;
+    background-color: #3c3c3c;
+    align-items: center; /* Center the content vertically */
+    justify-content: flex-start; /* Center the content horizontally */
+    flex-direction: column;
+    color: white;
+    border: 1px solid white;
+}
+
+#settingsTitle {
+    font-family: 'Courier New';
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingsOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New';
+    /* margin-top: 2vh; */
+    font-size: 14px;
+    width: 100%;
+    height: 15.5%;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.settingsOptions:hover{
+    opacity: 50%;
+}
+
+#settings-blur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+}
+
+#settings-popup-container {
+    opacity: 100%;
+    width: 40%;
+    height: 50%;
+    background-color: #686868;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: none;
+    flex-direction: column;
+    /* align-items: center; */
+    z-index: 4;
+}
+
+.settings-popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+#username-menu {
+    display: none;
+    height: 90%;
+}
+
+.username-menu-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+    /* margin-bottom: vw; */
+    border-bottom: 2px solid white;
+    position: absolute;
+    z-index: 3;
+}
+
+#userChangeToggle {
+    text-decoration: underline;
+}
+
+#userChangeToggle, #passChangeToggle {
+    cursor: pointer;
+}
+
+.user-pass-body-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13.5%;
+    position: absolute;
+}
+
+#settingsMenu-background {
+    position: relative;
+    width: 67.5%;
+    height: auto;
+    z-index: 0;
+}
+
+
+#userChange-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#currentUsername {
+    font-size: 2vw;
+    background-origin: white;
+    margin-top: 2vh;
+}
+
+.user-pass {
+    font-size: 2vw;
+    font-family: 'Courier New';
+    margin-top: 1.25vh;
+    margin-bottom: 1.25vh;
+    width: 80%;
+}
+
+.changeUsername-button {
+    font-size: 1.75vw;
+    font-family: 'Courier New';
+    margin-top: 1.25vh;
+    margin-bottom: 1.25vh;
+    width: 45%;
+    color: #010101;
+}
+
+
+#closeSettingsMenuButton {
+    position: absolute;
+    right: 1%;
+    width: 2.25%;
+    top: 1%;
+    cursor: pointer;
+}
+
+#userChange-body, #passChange-body {
+    position: absolute;
+}
+
+#passChange-body {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+#delete-menu {
+    display: none;
+}
+
+#delete-title {
+    width: 95%;
+    display: flex;
+    text-align: center;
+    font-size: 3.2vw;
+    margin-top: 12%;
+}
+
+#delete-subtitle {
+    width: 95%;
+    display: flex;
+    text-align: center;
+    font-size: 1.45vw;
+    justify-content: center;
+    margin-top: 2.5%;
+}
+
+#deleteAccountButton {
+    margin-top: 5%;
+    font-family: 'Courier New';
+    font-size: 2vw;
+    background-color: rgb(200, 16, 16);
+    color: white;
+    cursor: pointer;
+    width: 70%;
+}
+

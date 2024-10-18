@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Courier New';
+    color: #cfcece;
+    background-color: #3c3c3c;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 90vh;
+    position: relative;
+}
+
+.top-search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1.5vw;
+}
+
+#search-title {
+    width: 75%;
+    font-size: 3.5vw;
+    white-space: normal;    /* Allows text to wrap */
+    overflow: hidden;       /* Hide overflowed text */
+    display: -webkit-box;   /* Needed for WebKit browsers */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;  /* Limits text to 2 lines */
+    line-clamp: 1;          /* Standard property (not widely supported) */
+    text-overflow: ellipsis; /* Adds "..." to indicate more text */
+}
+
+#search-index {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    margin-left: 5vw;
+    font-size: 2vw;
+
+}
+
+#results-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10vh;
+}
+
+.results {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.albumResult {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ffff;
+    cursor: pointer;
+    margin-bottom: 0.5%;
+}
+
+.albumResult img {
+    margin: 1vw;
+    width: 10%;
+    height: 10%;
+    border-radius: 8px;
+}
+
+.albumResult:hover {
+    opacity: 65%;
+}
+
+.albumResult-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.albumResult-title {
+    /* display: flex; */
+    font-size: 3vw;
+    max-height: 12vh;
+    white-space: normal;    /* Allows text to wrap */
+    overflow: hidden;       /* Hide overflowed text */
+    display: -webkit-box;   /* Needed for WebKit browsers */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;  /* Limits text to 2 lines */
+    line-clamp: 2;          /* Standard property (not widely supported) */
+    text-overflow: ellipsis; /* Adds "..." to indicate more text */
+}
+
+.albumResult-artist {
+    display: flex;
+    font-size: 2vw;
+    white-space: normal;    /* Allows text to wrap */
+    overflow: hidden;       /* Hide overflowed text */
+    display: -webkit-box;   /* Needed for WebKit browsers */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;  /* Limits text to 2 lines */
+    line-clamp: 1;          /* Standard property (not widely supported) */
+    text-overflow: ellipsis; /* Adds "..." to indicate more text */
+}
+
+.albumResult-add-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    /* border: 1px solid white; */
+    height: 21vh;
+}
+
+.rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-size: 3vw;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+#result-pager {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35vw;
+    bottom: 0;
+    position: absolute
+}
+
+.result-page {
+    width: 5%;
+    height: 80%;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.result-page:hover {
+    opacity: 65%;
+
+}   
+
+
+.loadingScreen{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c3c3c;
+    z-index: 3;
+}

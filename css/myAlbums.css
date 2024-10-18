@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Courier New';
+    color: #cfcece;
+    background-color: #3c3c3c;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.texture {
+    z-index: 10;
+    width: 10vw;
+    position: absolute;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#myAlbums-title {
+    margin-left: 2.5%;
+    font-size: 5.5vw;
+    /* margin-right: 50%; */
+}
+
+
+.toggle-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    font-size: 2vw;
+}
+
+.ranked-container {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+
+.row-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rank-row {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #ffff;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.rank-row img {
+    margin-right: 5px;
+    /* margin-left: 5px; */
+    margin-bottom: 5px;
+    width: 20%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#unranked-container img{
+    width: 16.25%;
+}
+
+
+
+.gallery-container {
+    display: none;
+    justify-content: center;
+}
+
+.gallery {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust 150px to your desired min width */
+    gap: 10px; /* Adjust gap between images */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px;
+}
+

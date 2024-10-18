@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: 'Courier New';
+    color: #cfcece;
+    background-color: #3c3c3c;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#listenList-title {
+    font-size: 5vw;
+    margin: 2.5%;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust 150px to your desired min width */
+    gap: 10px; /* Adjust gap between images */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px;
+}
+
