@@ -1,6 +1,6 @@
 const name = window.localStorage.getItem('username');
 
-const endPoint = 'http://ec2-3-144-28-102.us-east-2.compute.amazonaws.com:3000/';
+const endPoint = '';
 
 /* write name in top bar */
 document.getElementById('name').innerText = "Welcome\n" + name;
