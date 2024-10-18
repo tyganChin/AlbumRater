@@ -1,7 +1,7 @@
 const username = window.localStorage.getItem('username');
 const unranked = JSON.parse(window.localStorage.getItem('unranked'));
 
-const endpoint = 'http://ec2-3-144-28-102.us-east-2.compute.amazonaws.com:3000/';
+const endpoint = '';
 
 var user = undefined;
 var userAlbums = undefined;
@@ -903,8 +903,8 @@ async function rerankAlbum() {
 
 /* method to get the original token */
 async function getToken() {
-    const clientID = '1036f292de2741b884a6b6e3769957a3';
-    const clientSecret = 'ffab91a93139428cbde25ab5206464c7';
+    const clientID = '';
+    const clientSecret = '';
     const result = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
         headers: {
