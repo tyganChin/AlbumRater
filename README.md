@@ -24,7 +24,7 @@ A full album rating website implementation including:
   - Customizable home screen with a profile picture and adjustable banner
 
 
-## How to Play
+## How to Access
 
 1. Visit http://tyganc.sgedu.site/ and create an account
 2. Begin listening and adding albums!
