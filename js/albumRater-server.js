@@ -2,15 +2,6 @@
 *  Server set up and close
 */
 
-
-/* Create a connection to the database */
-// const connection = mysql.createConnection({
-//     host: 'albumrater-db.cdu4gyqu6bfx.us-east-2.rds.amazonaws.com',
-//     user: 'admin',
-//     password: 'zrOcuTJQfMDvdEOnnsus',
-//     database: 'albumrater-db'
-// });
-
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
