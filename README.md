@@ -49,13 +49,13 @@ A full album rating website implementation including:
 <img width="49.6%" alt="Screenshot 2024-10-18 at 1 49 18 PM" src="https://github.com/user-attachments/assets/3a99f3d5-54ac-48c6-8405-77d53a7bbde4">
 <img width="49.6%" alt="Screenshot 2024-10-18 at 1 49 26 PM" src="https://github.com/user-attachments/assets/d4538982-80f1-42c3-9860-5db9c5b3862e">
 
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 49 36 PM" src="https://github.com/user-attachments/assets/11111932-f538-4d78-8adf-5a7812a7fc85">
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 49 44 PM" src="https://github.com/user-attachments/assets/95fedcc9-fe09-46d2-b0a1-5a7ce3b3e169">
-
+<img width="100%" alt="Screenshot 2024-10-18 at 1 49 36 PM" src="https://github.com/user-attachments/assets/11111932-f538-4d78-8adf-5a7812a7fc85">
+<img width="100%" alt="Screenshot 2024-10-18 at 1 49 44 PM" src="https://github.com/user-attachments/assets/95fedcc9-fe09-46d2-b0a1-5a7ce3b3e169">
 
 <img width="49.6%" alt="Screenshot 2024-10-18 at 1 50 01 PM" src="https://github.com/user-attachments/assets/5faa1dcf-9dcf-4a24-a6c0-97e5d917f670">
 <img width="49.6%" alt="Screenshot 2024-10-18 at 1 50 44 PM" src="https://github.com/user-attachments/assets/68afdce7-aba1-42e0-85de-5af082c92574">
 
+<img width="100%" alt="Screenshot 2024-10-18 at 7 46 41 PM" src="https://github.com/user-attachments/assets/88f7d93f-d192-4ae9-bffe-1e301c1cf683">
 
 
 
