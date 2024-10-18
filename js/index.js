@@ -1,4 +1,4 @@
-const endpoint = 'https://ec2-3-144-28-102.us-east-2.compute.amazonaws.com:3000/';
+const endpoint = '';
 
 /* play audio when screen is clicked */
 document.addEventListener('click', function(event) {
@@ -106,8 +106,8 @@ async function getUnrankedAlbums(albums) {
     return unranked;
 }
 
-const clientID = '1036f292de2741b884a6b6e3769957a3';
-const clientSecret = 'ffab91a93139428cbde25ab5206464c7';
+const clientID = '';
+const clientSecret = '';
 
 /* method to get the original token */
 async function getToken() {
