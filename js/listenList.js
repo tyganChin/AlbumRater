@@ -1,7 +1,7 @@
 const user = JSON.parse(window.localStorage.getItem('profile'));
 const albums = JSON.parse(user.listenList);
 
-const endpoint = 'http://ec2-3-144-28-102.us-east-2.compute.amazonaws.com:3000/';
+const endpoint = '';
 
 const username = window.localStorage.getItem('username');
 
