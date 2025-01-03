@@ -1,4 +1,4 @@
-# Minesweeper
+# AlbumRater
 #### Author : Tygan Chin
 #### Language : HTML, CSS, JavaScript
 #### Date : October, 2024
